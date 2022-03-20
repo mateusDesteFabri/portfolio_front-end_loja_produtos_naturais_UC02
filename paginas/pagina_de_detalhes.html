@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Página de Detalhes - Atividade 2 UC02</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    </head>
+    <body>
+
+        <header>
+            <div class="containerCabecalho">
+
+                <div class="logo"><a href="index.html"><h1>TÍTULO</h1></a></div> <!-- Tentei mudar a cor do link para preto, mas ele não aceitou vide estilo.css-->
+
+                <div class="barraDeBusca">
+                    <input type="text" class="campoDeBusca" placeholder="BUSCAR PRODUTOS"/>
+                    <button type="submit" value="Submit" class="botaoBuscar"><img class="lupa" src="imagens/icone_lupa.png" alt="BUSCAR"/></button>
+                </div>
+
+            </div>
+
+            <nav>
+                <div class="containerMenu">
+                
+                    <div class="itemMenu"><a href="#">CASTANHAS</a></div>
+                    <div class="itemMenu"><a href="#">CHÁS</a></div>
+                    <div class="itemMenu"><a href="#">ESPECIARIAS</a></div>
+                    <div class="itemMenu"><a href="#">FARINHAS</a></div>
+                    <div class="itemMenu"><a href="#">FRUTAS SECAS</a></div>
+
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Detalhe do produto -->
+
+            <div class="containerDetalheProduto">
+
+                <div class="detalheProdutoFoto">
+                    <img src="imagens/curcuma.jpg" alt="CÚRCUMA">
+                </div>
+
+                <div class="detalheProdutoTexto">
+
+                    <div class="detalheProdutoTitulo">
+                        <h2>CÚRCUMA EM PÓ 50G</h2>
+                    </div>
+
+                    <div class="detalheProdutoCaixaPreco">
+
+                        <div class="detalheProdutoCaixaPrecoValor">
+                            <h4>por</h4><h3>R$ 7,00</h3>
+                        </div>
+
+                        <div class="detalheProdutoCaixaPrecoBotao">
+                            <a href="#"><button type="button">COMPRAR</button></a>
+                        </div>
+                    </div>
+
+                    <div class="containerFormularioCep">
+                        <form method="POST">
+                            <div class="itemFormularioCep">
+
+                                <div class="labelCEP">
+                                    <label for="cep">CALCULE O FRETE</label>
+                                </div>
+                                <div>
+                                    <input type="text" class="InputCEP"  id="cep" name="cep" placeholder="CEP" />
+                                </div>
+                            </div>
+                            
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Divisor descrição -->
+            <div class="divisorDescricao">
+                <h2>DESCRIÇÃO</h2>
+            </div>
+
+            <!-- Descrição do produto -->
+
+            <div class="containerDescricao">
+
+                <p class="descricaoTextoTitulo">ESPECIFICAÇÕES</p>
+                <p class="descricaoTextoCorpo">A cúrcuma ou açafrão-da-terra é uma planta da família do gengibre, originária da Ásia. Da sua raíz seca e moída se obtém uma especiaria amarelo-dourada de sabor ligeiramente amargo. É usada para temperar e dar cor aos alimentos.</p>
+                <br/>
+
+                <p class="descricaoTextoTitulo">CONTEÚDO: 50 GRAMAS DE CÚRCUMA EM PÓ PURA</p>
+                <br/>
+
+                <p class="descricaoTextoTitulo">INGREDIENTES</p>
+                <p class="descricaoTextoCorpo">Cúrcuma.</p>
+                <br/>
+
+                <p class="descricaoTextoTitulo">RECOMENDAÇÃO DE CONSUMO</p>
+                <p class="descricaoTextoCorpo">Pode ser usada para temperar e colorir carne de frango e de peixe,  pratos com ovos, molhos, maioneses, sopas, arroz e pães. É também muito utilizada em pratos da culinária indiana.</p>
+
+            </div>
+
+            <!-- Divisor produtos relacionados-->
+            <div class="divisorProdutosRelacionados">
+                <h2>PRODUTOS RELACIONADOS</h2>
+            </div>
+
+            <!-- Vitrine -->
+            <div class="containerVitrine">
+
+                <div class="itemVitrine"> <!-- Caju-->
+
+                    <div class="itemVitrineFoto">
+                        <img src="imagens/caju.jpg" alt="CASTANHA DE CAJU">
+                    </div>
+
+                    <div class="itemVitrineDescricao">
+                        <p>CASTANHA DE CAJU A GRANEL 100 G</p>
+                    </div>
+
+                    <div class="itemVitrinePreco">
+                        <p>R$ 5,00</p>
+                    </div>
+
+                    <div class="itemVitrineBotao">
+                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                    </div>
+
+                </div>
+
+                <div class="itemVitrine"> <!-- Páprica-->
+
+                    <div class="itemVitrineFoto">
+                        <img src="imagens/paprica.jpg" alt="PÁPRICA">
+                    </div>
+
+                    <div class="itemVitrineDescricao">
+                        <p>PÁPRICA DEFUMADA<br/>200 G</p>
+                    </div>
+
+                    <div class="itemVitrinePreco">
+                        <p>R$ 3,90</p>
+                    </div>
+
+                    <div class="itemVitrineBotao">
+                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                    </div>
+
+                </div>
+
+                <div class="itemVitrine"> <!-- Hortelã-->
+
+                    <div class="itemVitrineFoto">
+                        <img src="imagens/hortela.jpg" alt="HORTELÃ">
+                    </div>
+
+                    <div class="itemVitrineDescricao">
+                        <p>HORTELÃ DESIDRATADA<br/>100 G</p>
+                    </div>
+
+                    <div class="itemVitrinePreco">
+                        <p>R$ 4,40</p>
+                    </div>
+
+                    <div class="itemVitrineBotao">
+                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                    </div>
+
+                </div>
+
+                <div class="itemVitrine"> <!-- Cominho-->
+
+                    <div class="itemVitrineFoto">
+                        <img src="imagens/cominho.jpg" alt="COMINHO">
+                    </div>
+
+                    <div class="itemVitrineDescricao">
+                        <p>COMINHO EM PÓ 60G</p>
+                    </div>
+
+                    <div class="itemVitrinePreco">
+                        <p>R$ 3,50</p>
+                    </div>
+
+                    <div class="itemVitrineBotao">
+                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+        
+        <footer>
+
+            <!-- Rodapé -->
+
+            <div class="Rodape">
+                <h3>&copy; 2021 - TÍTULO</h3>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>

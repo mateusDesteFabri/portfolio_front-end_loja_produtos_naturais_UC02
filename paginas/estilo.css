@@ -1,0 +1,612 @@
+/* Tipografia */
+
+@font-face{
+    font-family: Roboto;
+    src: local(Roboto/Roboto-Regular); 
+}
+
+body{
+    font-family: Roboto; 
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Header */
+/* Parte de cima do cabeçalho*/
+
+.containerCabecalho{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1349px;
+    height:89px;
+    border: none;
+    align-items: center;
+}
+
+    .logo{
+        width: 216px;
+        height: 52.2px;
+        text-align: center;
+        border: none;
+        /*margin-top: 18px;*/
+        margin-left: 46px; 
+        text-decoration: none;   
+        color: #000000;
+    }
+
+        .logo a:link, a:visited {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .logo h1{
+            font-size: 36px;
+            margin: 0px;
+            text-decoration: none;
+        }
+
+    .barraDeBusca{
+        background-color: white;
+        border: solid 1px;
+        border-color: black;
+        width: 423px;
+        height: 46px;
+        /*margin-top: 20px;*/
+        margin-left: 35px;
+    }
+
+        .campoDeBusca{
+            float: left;
+            background-color: transparent;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 14px;
+            border: none;
+            width: 339px;
+            height: 32px;
+            font-size: 24px;
+        }
+
+        .botaoBuscar{
+            float: right;
+            background-color: transparent;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            margin-right: 14px;
+            border: none;
+            height: 32px;
+            cursor: pointer;
+        }
+
+        .lupa{
+            width:20px;
+            height:20px;
+        }
+
+/* Menu */
+
+.containerMenu{
+    max-width:1349px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2D952D;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+}
+
+    .itemMenu{
+        /*margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 88px;*/
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #2D952D;
+        text-align: center;
+        font-size: 18px;
+        height: 44px;
+        line-height: 44px;
+        border: none;
+    }
+
+        .itemMenu a:link, a:visited{
+            text-decoration: none;
+            color: #0000FF;
+        }
+
+        .itemMenu a:hover{
+            text-decoration: underline;
+            color: #0000FF;
+        }
+
+/* Main da página principal */
+/* Carrossel */
+
+.containerCarrossel{
+    width: 1048px;
+    height: 302px;
+    background-color: transparent;
+    overflow: hidden;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+}
+
+.containerCarrossel .itemCarrossel{
+    width: 400%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.containerCarrossel .itemCarrossel img{
+    width: 24.9%; 
+}
+
+@keyframes animacao {
+    0% { margin-left: 0; }   /* 5% = 1s */
+    25% { margin-left: 0; }
+    33% { margin-left: -100%; }
+    58% { margin-left: -100%; }
+    66% { margin-left: -200%; }
+    91% { margin-left: -200%; }
+    100% { margin-left: -300%; }
+}
+
+/* Linha Divisória de Produtos*/
+
+.divisorProdutos{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width:1141px;
+    height:51px;
+    margin-top: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 3px  #000000;
+}
+
+.divisorProdutos h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 15px;
+    text-align: left;
+}
+
+/* Vitrine */
+
+.containerVitrine{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin-top: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    border: none;
+}
+
+    .itemVitrine{
+        width: 248px;
+        height: 432px;
+        border: solid 1px #C4C4C4;
+        margin:0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+        .itemVitrineFoto img {
+            width: 197px;
+            height: 131px;
+            margin-top: 24px;
+        }
+
+        .itemVitrineDescricao{
+            display: flex;
+            width: 218px;
+            height: 55px;
+            margin-top: 23px;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+
+            .itemVitrineDescricao p {
+                font-size: 14px;
+                font-weight: normal;
+                margin: 0px;
+                text-align: center;
+            }
+
+        .itemVitrinePreco{
+            width: 218px;
+            height: 55px;
+            line-height: 55px;
+            margin-top: 1px;
+            border: none;
+        }
+
+            .itemVitrinePreco p {
+                font-size: 14px;
+                font-weight: normal;
+                margin: 0px;
+                text-align: center;
+            }
+
+        .itemVitrineBotao{
+            width: 218px;
+            height: 40px;
+            margin-top: 77px;
+            border: none;
+        }
+
+            .itemVitrineBotao button{
+                width: 218px;
+                height: 40px;
+                line-height: 40px; 
+                background-color: #2D952D;
+                border: none;
+                text-align: center;
+                text-decoration: none;
+                font-size: 14px;
+                cursor: pointer;
+            } 
+
+/* Divisor newsletter */
+
+.divisorNewsletter{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width:1141px;
+    height:51px;
+    margin-top: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid #000000;
+    }
+    
+    .divisorNewsletter h2{
+        font-size: 18px;
+        font-weight: normal;
+        margin-left: 15px;
+        text-align: left;
+    }
+
+/* Formulário */
+
+.containerFormulario{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 43px;
+    margin-left: 112px;
+    margin-right:auto;
+    width: 710px;
+    height: 92px;
+    border: none;
+}
+
+    .itemFormulario{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        border: none;
+    }
+
+        .itemFormularioLabel{
+            width: 135px;
+            height: 26.5px;
+            line-height: 26.5px;
+            margin-right: 15px;
+            font-size: 14px;
+            text-align: left;
+            border: none;
+        }
+
+        .itemFormularioInput{
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            background-color: transparent;
+            border: 1px solid #000000;
+            width: 400px;
+            height: 23px;
+            font-size: 14px;
+            }
+
+        .formularioBotao{
+            width: 134px;
+            height: 26.5px;
+            margin-left: 16px;
+            background-color: #2D952D;
+            border: none; 
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+
+/* Rodapé */
+
+.Rodape{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width:1330px;
+    height:51px;
+    margin-top: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 128px;
+    border-top: 3px solid #000000;
+    }
+    
+    .Rodape h3{
+        font-size: 18px;
+        font-weight: normal;
+        margin-left: 15px;
+        text-align: left;
+    }
+
+/* Página de detalhes */
+
+/* Detalhe do produto */
+
+.containerDetalheProduto{
+    width: 1150px;
+    height: 557px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+    .detalheProdutoFoto{
+        width: 570px;
+        height: 497px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        border: none;
+    }
+
+        .detalheProdutoFoto img{
+            width: 540px;
+            height: 359px;
+            margin: 0px;
+        }
+
+    .detalheProdutoTexto{
+        width: 570px;
+        height: 497px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: left;
+        justify-content: flex-start;
+        margin: 0px;
+        border: none;
+    }
+
+        .detalheProdutoTitulo{
+            width: 540px;
+            height: 67px;
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: left;
+            margin: 0px;
+            border: none;
+        }
+
+            .detalheProdutoTitulo h2{
+                font-size: 24px;
+                font-weight: normal;
+                text-align: left;
+                margin:0px;
+                padding: 0px;
+            }
+
+        .detalheProdutoCaixaPreco{
+            width: 568px;
+            height: 200px;
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: left;
+            justify-content: flex-start;
+            margin: 58px 0px 0px 0px;
+            border-top: 1px solid #C4C4C4;
+            border-bottom: 1px solid #C4C4C4;
+            border-left: none;
+            border-right: none;
+        }
+
+            .detalheProdutoCaixaPrecoValor{
+                width: 192px;
+                height: 60px;
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: left;
+                margin: 0px;
+                border: none;
+            }
+
+                .detalheProdutoCaixaPrecoValor h4 {
+                    font-size: 36px;
+                    font-weight: normal;
+                    text-align: left;
+                    margin:0px;
+                    padding: 0px;
+                    color: #C4C4C4;
+                }
+
+                .detalheProdutoCaixaPrecoValor h3{
+                    font-size: 36px;
+                    font-weight: normal;
+                    text-align: left;
+                    margin-left: 14px;
+                    margin-right: 0px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    padding: 0px;
+                }
+
+            .detalheProdutoCaixaPrecoBotao{
+                width: 568px;
+                height: 60px;
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin: 34px 0px 0px 0px;
+                border: none;
+            }
+
+                .detalheProdutoCaixaPrecoBotao a {
+                    text-decoration: none;
+                } 
+
+                .detalheProdutoCaixaPrecoBotao button {
+                    width: 444px;
+                    height: 58px;
+                    display:flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #2D952D;
+                    border: none;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 36px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+
+        .containerFormularioCep{
+            width: 568px;
+            height: 50px;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0px 0px 0px;
+            border: none;
+        }
+
+            .itemFormularioCep{
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: left;
+                border: none;
+            }
+
+            .labelCEP{
+            width: 130px;
+            height: 48px;
+            line-height: 48px;
+            margin-right: 193px;
+            font-size: 14px;
+            text-align: left;
+            border: none;
+            }
+
+            .InputCEP{
+                margin: 0px;
+                padding: 0px;
+                float: left;
+                background-color: transparent;
+                border: 1px solid #C4C4C4;
+                width: 238.5px;
+                height: 48.5px;
+                font-size: 14px;
+            }
+
+/* Divisor descrição */
+
+.divisorDescricao{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width:1141px;
+    height:51px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 3px  #000000;
+}
+
+.divisorDescricao h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 15px;
+    text-align: left;
+}
+
+/* Descrição do produto */
+
+.containerDescricao{
+    max-width: 1140px;
+    height: auto;
+    margin: 38px auto 0px auto;
+    text-align: justify;
+    border: none;
+}
+
+    .descricaoTextoTitulo{
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .descricaoTextoCorpo{
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+/* Divisor produtos relacionados */
+
+.divisorProdutosRelacionados{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width:1141px;
+    height:51px;
+    margin-top: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 3px  #000000;
+}
+
+.divisorProdutosRelacionados h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 15px;
+    text-align: left;
+}
+

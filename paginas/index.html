@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Página Principal - Atividade 2 UC02</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    </head>
+    <body>
+
+        <header>
+            <div class="containerCabecalho">
+
+                <div class="logo"><a href="index.html"><h1>TÍTULO</h1></a></div> <!-- Tentei mudar a cor do link para preto, mas ele não aceitou vide estilo.css-->
+
+                <div class="barraDeBusca">
+                    <input type="text" class="campoDeBusca" placeholder="BUSCAR PRODUTOS"/>
+                    <button type="submit" value="Submit" class="botaoBuscar"><img class="lupa" src="imagens/icone_lupa.png" alt="BUSCAR"/></button>
+                </div>
+
+            </div>
+
+            <nav>
+                <div class="containerMenu">
+                
+                    <div class="itemMenu"><a href="#">CASTANHAS</a></div>
+                    <div class="itemMenu"><a href="#">CHÁS</a></div>
+                    <div class="itemMenu"><a href="#">ESPECIARIAS</a></div>
+                    <div class="itemMenu"><a href="#">FARINHAS</a></div>
+                    <div class="itemMenu"><a href="#">FRUTAS SECAS</a></div>
+
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Carrossel-->
+
+            <section class="containerCarrossel">
+                <div class="itemCarrossel">
+                    <img src="imagens/oferta1_carrossel.jpg" alt="OFERTA 1">
+                    <img src="imagens/oferta2_carrossel.jpg" alt="OFERTA 2">
+                    <img src="imagens/oferta3_carrossel.jpg" alt="OFERTA 3">
+                    <img src="imagens/oferta1_carrossel.jpg" alt="OFERTA 1">
+                </div>
+            </section>
+
+            <!-- Linha divisória de produtos-->
+            <div class="divisorProdutos">
+                <h2>PRODUTOS</h2>
+            </div>
+
+            <!-- Vitrine -->
+            <div class="containerVitrine">
+
+                <div class="itemVitrine"> <!-- Cúrcuma-->
+
+                    <div class="itemVitrineFoto">
+                        <img src="imagens/curcuma.jpg" alt="CÚRCUMA">
+                    </div>
+
+                    <div class="itemVitrineDescricao">
+                        <p>CÚRCUMA EM PÓ 50G</p>
+                    </div>
+
+                    <div class="itemVitrinePreco">
+                        <p>R$ 7,OO</p>
+                    </div>
+
+                    <div class="itemVitrineBotao">
+                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                    </div>
+
+                </div>
+
+                <div class="itemVitrine"> <!-- Caju-->
+
+                    <div class="itemVitrineFoto">
+                        <img src="imagens/caju.jpg" alt="CASTANHA DE CAJU">
+                    </div>
+
+                    <div class="itemVitrineDescricao">
+                        <p>CASTANHA DE CAJU A GRANEL 100 G</p>
+                    </div>
+
+                    <div class="itemVitrinePreco">
+                        <p>R$ 5,00</p>
+                    </div>
+
+                    <div class="itemVitrineBotao">
+                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                    </div>
+
+                </div>
+
+                <div class="itemVitrine"> <!-- Páprica-->
+
+                    <div class="itemVitrineFoto">
+                        <img src="imagens/paprica.jpg" alt="PÁPRICA">
+                    </div>
+
+                    <div class="itemVitrineDescricao">
+                        <p>PÁPRICA DEFUMADA<br/>200 G</p>
+                    </div>
+
+                    <div class="itemVitrinePreco">
+                        <p>R$ 3,90</p>
+                    </div>
+
+                    <div class="itemVitrineBotao">
+                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                    </div>
+
+                </div>
+
+                <div class="itemVitrine"> <!-- Hortelã-->
+
+                    <div class="itemVitrineFoto">
+                        <img src="imagens/hortela.jpg" alt="HORTELÃ">
+                    </div>
+
+                    <div class="itemVitrineDescricao">
+                        <p>HORTELÃ DESIDRATADA<br/>100 G</p>
+                    </div>
+
+                    <div class="itemVitrinePreco">
+                        <p>R$ 4,40</p>
+                    </div>
+
+                    <div class="itemVitrineBotao">
+                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Divisor newsletter -->
+
+            <div class="divisorNewsletter">
+                <h2>QUER RECEBER NOSSAS OFERTAS POR E-MAIL? É SÓ SE CADASTRAR!</h2>
+            </div>
+
+            <!-- Formulário -->
+
+            <div class="containerFormulario">
+
+                <form method="POST">
+                        
+                        <div class="itemFormulario">
+                            <div class="itemFormularioLabel">
+                                <label for="nome">NOME:</label>
+                            </div>
+                            <div>
+                                <input type="text" class="itemFormularioInput" id="nome" name="nome" placeholder="Campo obrigatório" required />
+                            </div>
+                        </div>
+
+                        <div class="itemFormulario">
+                            <div class="itemFormularioLabel">
+                                <label for="email">E-MAIL:</label>
+                            </div>
+                            <div>
+                                <input type="email" class="itemFormularioInput" id="email" name="email" placeholder="Campo obrigatório" required />
+                            </div>
+                        </div>
+
+                        <div class="itemFormulario">
+                            <div class="itemFormularioLabel">
+                                <label for="telefone">TELEFONE:</label>
+                            </div>
+                            <div>
+                                <input type="tel" class="itemFormularioInput" id="telefone" name="telefone" />
+                            </div>
+                            <div>
+                                <input class="formularioBotao" type="submit" value="CADASTRAR" />
+                            </div>
+                        </div>
+                    
+                </form>
+            </div>
+
+        </main>
+        
+        <footer>
+
+            <!-- Rodapé -->
+
+            <div class="Rodape">
+                <h3>&copy; 2021 - TÍTULO</h3>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
