@@ -59,3 +59,11 @@
   <li>CSS</li>
   <li>JavaScript</li>
 </ul>
+
+<h2>Autor</h2>
+<p>Feito por Mateus Destefani Fabri</p>
+<p>
+  <a href="https://www.linkedin.com/in/mateus-destefani-fabri-44b205232/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue">
+  </a>
+</p>
