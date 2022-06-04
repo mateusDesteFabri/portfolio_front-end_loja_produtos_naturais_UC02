@@ -1,3 +1,6 @@
+<h1>&#128679; CÓDIGO EM MANUTENÇÃO &#128679;</h1>
+<p>O código deste projeto está em manutenção. Melhorias estão sendo implementadas.</p>
+
 <h1>Portfólio front-end: loja de produtos naturais</h1>
 
 <p>Esta aplicação consiste no front-end de um website para uma loja de produtos naturais. Foi desenvolvida durante a unidade curricular 02 do 
