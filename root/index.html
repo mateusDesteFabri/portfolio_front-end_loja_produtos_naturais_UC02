@@ -19,14 +19,22 @@
         <header>
             <div class="containerCabecalho">
 
-                <div class="logo"><a href="index.html"><h1>TÍTULO</h1></a></div> <!-- Tentei mudar a cor do link para preto, mas ele não aceitou vide estilo.css-->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Logomarca" style="width:157px;height:80px;">
+                    </a>
+                </div> 
 
                 <div class="barraDeBusca">
-                    <input type="text" class="campoDeBusca" placeholder="BUSCAR PRODUTOS"/>
-                    <button type="submit" value="Submit" class="botaoBuscar"><img class="lupa" src="imagens/icone_lupa.png" alt="BUSCAR"/></button>
+                    <form action="/form-handler.php" method="get">
+                        <input class="campoDeBusca" type="search" name="q" placeholder="BUSCAR PRODUTOS"/>
+                        <button class="botaoBuscar" type="submit">
+                            <img class="lupa" src="images/iconeLupa.png" alt="BUSCAR"/>
+                        </button>
+                    </form> 
                 </div>
 
-            </div>
+            </div> <!--Parei aqui-->
 
             <nav>
                 <div class="containerMenu">
