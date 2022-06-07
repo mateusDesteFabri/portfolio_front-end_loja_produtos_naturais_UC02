@@ -113,7 +113,7 @@ body{
 
         .itemMenu a:link, a:visited{
             text-decoration: none;
-            color: #0000FF;
+            color: #000000;
         }
 
         .itemMenu a:hover{
@@ -172,7 +172,7 @@ body{
     border-bottom: solid 3px  #000000;
 }
 
-.divisorProdutos h2{
+.divisorProdutos h1{
     font-size: 18px;
     font-weight: normal;
     margin-left: 15px;
@@ -219,7 +219,7 @@ body{
             border: none;
         }
 
-            .itemVitrineDescricao p {
+            .itemVitrineDescricao h2 {
                 font-size: 14px;
                 font-weight: normal;
                 margin: 0px;
@@ -252,13 +252,20 @@ body{
                 width: 218px;
                 height: 40px;
                 line-height: 40px; 
-                background-color: #2D952D;
-                border: none;
+                background-color: #FFFFFF;
+                border: 2px solid #2D952D;
+                color: #000000;
                 text-align: center;
                 text-decoration: none;
                 font-size: 14px;
+                transition-duration: 0.4s;
                 cursor: pointer;
-            } 
+            }
+
+                .itemVitrineBotao button:hover{
+                    background-color: #2D952D;
+                    color: #FFFFFF;
+                }
 
 /* Divisor newsletter */
 
@@ -274,7 +281,7 @@ body{
     border-top: 3px solid #000000;
     }
     
-    .divisorNewsletter h2{
+    .divisorNewsletter h3{
         font-size: 18px;
         font-weight: normal;
         margin-left: 15px;
