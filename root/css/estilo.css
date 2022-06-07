@@ -346,25 +346,74 @@ body{
 
 /* Rodapé */
 
-.Rodape{
+.rodape{
     display: flex;
-    justify-content: left;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     width:1330px;
-    height:51px;
+    /*height:51px;*/
     margin-top: 43px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 128px;
+    /*margin-bottom: 128px;*/
     border-top: 3px solid #000000;
     }
     
-    .Rodape h3{
-        font-size: 18px;
-        font-weight: normal;
-        margin-left: 15px;
-        text-align: left;
+    .rodapeLogo {
+        margin-top: 10px;
+        margin-left: 46px;
     }
+    
+        .rodapeLogo img{
+            width: 160px;
+            height: 81px;
+        }
+
+    .rodapeContato {
+        font-style: normal;
+    }
+
+        .rodapeContato h4 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .rodapeContato img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .rodapeContato p {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .rodapeContatoItem {
+            display: flex;
+            flex-direction: row;
+        }
+
+    .rodapePagamento {
+        margin-right: 46px;
+    }
+    
+        .rodapePagamento h4 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .rodapePagamento img {
+            width: 330px;
+            height: 60px;
+        } 
 
 /* Página de detalhes */
 
