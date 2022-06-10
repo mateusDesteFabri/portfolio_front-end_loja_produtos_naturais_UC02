@@ -474,7 +474,7 @@ body{
             border: none;
         }
 
-            .detalheProdutoTitulo h2{
+            .detalheProdutoTitulo h1{
                 font-size: 24px;
                 font-weight: normal;
                 text-align: left;
@@ -509,7 +509,7 @@ body{
                 border: none;
             }
 
-                .detalheProdutoCaixaPrecoValor h4 {
+                .detalheProdutoCaixaPrecoValorT1 {
                     font-size: 36px;
                     font-weight: normal;
                     text-align: left;
@@ -518,7 +518,7 @@ body{
                     color: #C4C4C4;
                 }
 
-                .detalheProdutoCaixaPrecoValor h3{
+                .detalheProdutoCaixaPrecoValorT2 {
                     font-size: 36px;
                     font-weight: normal;
                     text-align: left;
@@ -529,38 +529,53 @@ body{
                     padding: 0px;
                 }
 
-            .detalheProdutoCaixaPrecoBotao{
-                width: 568px;
-                height: 60px;
+            .detalheProdutoCaixaPrecoSubmit {
                 display:flex;
                 flex-direction: row;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                margin: 34px 0px 0px 0px;
-                border: none;
+                align-items: flex-end;
+                justify-content: flex-start;
             }
 
-                .detalheProdutoCaixaPrecoBotao a {
-                    text-decoration: none;
-                } 
-
-                .detalheProdutoCaixaPrecoBotao button {
-                    width: 444px;
+                .detalheProdutoCaixaPrecoQuantidade input {
+                    width: 80px;
                     height: 58px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 28.8px;  
+                }
+
+                .detalheProdutoCaixaPrecoBotao{
+                    width: 568px;
+                    height: 60px;
                     display:flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     align-items: center;
-                    justify-content: center;
-                    background-color: #2D952D;
+                    justify-content: flex-start;
+                    margin: 34px 0px 0px 30px;
                     border: none;
-                    text-align: center;
-                    text-decoration: none;
-                    font-size: 36px;
-                    color: #FFFFFF;
-                    cursor: pointer;
                 }
+
+                    .detalheProdutoCaixaPrecoBotao a {
+                        text-decoration: none;
+                    } 
+
+                    .detalheProdutoCaixaPrecoBotao button {
+                        width: 444px;
+                        height: 58px;
+                        display:flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #2D952D;
+                        border: none;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 32px;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                    }
 
         .containerFormularioCep{
             width: 568px;
@@ -594,12 +609,25 @@ body{
             }
 
             .InputCEP{
+                display:flex;
+                flex-direction: row;
+                margin: 0px;
+                padding: 0px;
+                /*float: left;*/
+                background-color: transparent;
+                border: 1px solid #C4C4C4;
+                width: 238.5px;
+                height: 48.5px;
+                font-size: 14px;
+            }
+
+            .InputCEP input {
                 margin: 0px;
                 padding: 0px;
                 float: left;
                 background-color: transparent;
-                border: 1px solid #C4C4C4;
-                width: 238.5px;
+                border: none;
+                width: 200px;
                 height: 48.5px;
                 font-size: 14px;
             }

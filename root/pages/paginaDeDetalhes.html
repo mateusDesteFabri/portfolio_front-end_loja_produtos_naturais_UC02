@@ -14,30 +14,34 @@
         
         <link rel="stylesheet" href="../css/estilo.css"> 
     </head>
-    <body>
+    <body> <!-- Parei aqui -->
 
         <header>
             <div class="containerCabecalho">
 
-                <div class="logo"><a href="index.html"><h1>TÍTULO</h1></a></div> <!-- Tentei mudar a cor do link para preto, mas ele não aceitou vide estilo.css-->
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="LOGOMARCA" style="width:157px;height:80px;">
+                    </a>
+                </div>
 
                 <div class="barraDeBusca">
-                    <input type="text" class="campoDeBusca" placeholder="BUSCAR PRODUTOS"/>
-                    <button type="submit" value="Submit" class="botaoBuscar"><img class="lupa" src="imagens/icone_lupa.png" alt="BUSCAR"/></button>
+                    <form action="../form-handler.php" method="get">
+                        <input class="campoDeBusca" type="search" name="q" placeholder="BUSCAR PRODUTOS"/>
+                        <button class="botaoBuscar" type="submit">
+                            <img class="lupa" src="../images/iconeLupa.png" alt="BUSCAR"/>
+                        </button>
+                    </form>
                 </div>
 
             </div>
 
-            <nav>
-                <div class="containerMenu">
-                
-                    <div class="itemMenu"><a href="#">CASTANHAS</a></div>
-                    <div class="itemMenu"><a href="#">CHÁS</a></div>
-                    <div class="itemMenu"><a href="#">ESPECIARIAS</a></div>
-                    <div class="itemMenu"><a href="#">FARINHAS</a></div>
-                    <div class="itemMenu"><a href="#">FRUTAS SECAS</a></div>
-
-                </div>
+            <nav class="containerMenu">
+                <div class="itemMenu"><a href="#">CASTANHAS</a></div>
+                <div class="itemMenu"><a href="#">CHÁS</a></div>
+                <div class="itemMenu"><a href="#">ESPECIARIAS</a></div>
+                <div class="itemMenu"><a href="#">FARINHAS</a></div>
+                <div class="itemMenu"><a href="#">FRUTAS SECAS</a></div>
             </nav>
         </header>
 
@@ -45,48 +49,60 @@
 
             <!-- Detalhe do produto -->
 
-            <div class="containerDetalheProduto">
+            <section class="containerDetalheProduto">
 
                 <div class="detalheProdutoFoto">
-                    <img src="imagens/curcuma.jpg" alt="CÚRCUMA">
+                    <img src="../images/curcuma.jpg" alt="CÚRCUMA">
                 </div>
 
-                <div class="detalheProdutoTexto">
+                <form class="detalheProdutoTexto" action="../form-handler-compra.php" method="post">
 
                     <div class="detalheProdutoTitulo">
-                        <h2>CÚRCUMA EM PÓ 50G</h2>
+                        <h1>CÚRCUMA EM PÓ 50G</h1>
+                        <input type="hidden" id="nomeProduto" name="nomeProduto" value="Cúrcuma em pó 50G">
                     </div>
 
                     <div class="detalheProdutoCaixaPreco">
 
                         <div class="detalheProdutoCaixaPrecoValor">
-                            <h4>por</h4><h3>R$ 7,00</h3>
+                            <p><span class="detalheProdutoCaixaPrecoValorT1">por</span><span class="detalheProdutoCaixaPrecoValorT2">R$ 7,00</span></p>
+                            <input type="hidden" id="precoProduto" name="precoProduto" value="7.00">
                         </div>
 
-                        <div class="detalheProdutoCaixaPrecoBotao">
-                            <a href="#"><button type="button">COMPRAR</button></a>
+                        <div class="detalheProdutoCaixaPrecoSubmit">
+
+                            <div class="detalheProdutoCaixaPrecoQuantidade">
+                                <input type="number" id="quantidadeProduto" name="quantidadeProduto" min="1" value="1">
+                            </div>
+                        
+                            <div class="detalheProdutoCaixaPrecoBotao">
+                                <button type="submit">COMPRAR</button>
+                            </div>
+
                         </div>
                     </div>
 
                     <div class="containerFormularioCep">
-                        <form method="POST">
-                            <div class="itemFormularioCep">
+                        
+                        <div class="itemFormularioCep">
 
-                                <div class="labelCEP">
-                                    <label for="cep">CALCULE O FRETE</label>
-                                </div>
-                                <div>
-                                    <input type="text" class="InputCEP"  id="cep" name="cep" placeholder="CEP" />
-                                </div>
+                            <div class="labelCEP">
+                                <label for="cep">CALCULE O FRETE</label>
                             </div>
-                            
-                        </form>
+
+                            <div class="InputCEP">
+                                <input type="text" id="cep" name="cep" placeholder="CEP" />
+                                <button class="botaoBuscar" type="submit" formaction="../form-handler-calculaFrete.php">
+                                    <img class="lupa" src="../images/iconeLupa.png" alt="CALCULAR FRETE"/>
+                                </button>
+                            </div>
+                        </div> 
 
                     </div>
 
-                </div>
+                </form>
 
-            </div>
+            </section> <!--Parei aqui-->
 
             <!-- Divisor descrição -->
             <div class="divisorDescricao">
