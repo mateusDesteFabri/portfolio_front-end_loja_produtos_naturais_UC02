@@ -226,6 +226,13 @@ body{
                 text-align: center;
             }
 
+            .itemVitrineDescricao h5 {
+                font-size: 14px;
+                font-weight: normal;
+                margin: 0px;
+                text-align: center;
+            }
+
         .itemVitrinePreco{
             width: 218px;
             height: 55px;
@@ -687,7 +694,7 @@ body{
     border-bottom: solid 3px  #000000;
 }
 
-.divisorProdutosRelacionados h2{
+.divisorProdutosRelacionados h4{
     font-size: 18px;
     font-weight: normal;
     margin-left: 15px;

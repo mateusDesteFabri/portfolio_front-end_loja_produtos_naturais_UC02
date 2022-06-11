@@ -14,7 +14,7 @@
         
         <link rel="stylesheet" href="../css/estilo.css"> 
     </head>
-    <body> <!-- Parei aqui -->
+    <body>
 
         <header>
             <div class="containerCabecalho">
@@ -102,49 +102,54 @@
 
                 </form>
 
-            </section> <!--Parei aqui-->
+            </section>
 
-            <!-- Divisor descrição -->
-            <div class="divisorDescricao">
-                <h2>DESCRIÇÃO</h2>
-            </div>
+            <section>
+                <!-- Divisor descrição -->
+                <div class="divisorDescricao">
+                    <h2>DESCRIÇÃO</h2>
+                </div>
 
-            <!-- Descrição do produto -->
+                <!-- Descrição do produto -->
 
-            <div class="containerDescricao">
+                <div class="containerDescricao">
 
-                <p class="descricaoTextoTitulo">ESPECIFICAÇÕES</p>
-                <p class="descricaoTextoCorpo">A cúrcuma ou açafrão-da-terra é uma planta da família do gengibre, originária da Ásia. Da sua raíz seca e moída se obtém uma especiaria amarelo-dourada de sabor ligeiramente amargo. É usada para temperar e dar cor aos alimentos.</p>
-                <br/>
+                    <h3 class="descricaoTextoTitulo">ESPECIFICAÇÕES</h3>
+                    <p class="descricaoTextoCorpo">A cúrcuma ou açafrão-da-terra é uma planta da família do gengibre, originária da Ásia. Da sua raíz seca e moída se obtém uma especiaria amarelo-dourada de sabor ligeiramente amargo. É usada para temperar e dar cor aos alimentos.</p>
+                    <br/>
 
-                <p class="descricaoTextoTitulo">CONTEÚDO: 50 GRAMAS DE CÚRCUMA EM PÓ PURA</p>
-                <br/>
+                    <h3 class="descricaoTextoTitulo">CONTEÚDO: 50 GRAMAS DE CÚRCUMA EM PÓ PURA</h3>
+                    <br/>
 
-                <p class="descricaoTextoTitulo">INGREDIENTES</p>
-                <p class="descricaoTextoCorpo">Cúrcuma.</p>
-                <br/>
+                    <h3 class="descricaoTextoTitulo">INGREDIENTES</h3>
+                    <p class="descricaoTextoCorpo">Cúrcuma.</p>
+                    <br/>
 
-                <p class="descricaoTextoTitulo">RECOMENDAÇÃO DE CONSUMO</p>
-                <p class="descricaoTextoCorpo">Pode ser usada para temperar e colorir carne de frango e de peixe,  pratos com ovos, molhos, maioneses, sopas, arroz e pães. É também muito utilizada em pratos da culinária indiana.</p>
+                    <h3 class="descricaoTextoTitulo">RECOMENDAÇÃO DE CONSUMO</h3>
+                    <p class="descricaoTextoCorpo">Pode ser usada para temperar e colorir carne de frango e de peixe,  pratos com ovos, molhos, maioneses, sopas, arroz e pães. É também muito utilizada em pratos da culinária indiana.</p>
 
-            </div>
+                </div>
+            </section>
+        </main>
+
+        <section>
 
             <!-- Divisor produtos relacionados-->
             <div class="divisorProdutosRelacionados">
-                <h2>PRODUTOS RELACIONADOS</h2>
+                <h4>PRODUTOS RELACIONADOS</h4>
             </div>
 
             <!-- Vitrine -->
             <div class="containerVitrine">
 
-                <div class="itemVitrine"> <!-- Caju-->
+                <article class="itemVitrine"> <!-- Caju-->
 
                     <div class="itemVitrineFoto">
-                        <img src="imagens/caju.jpg" alt="CASTANHA DE CAJU">
+                        <img src="../images/caju.jpg" alt="CASTANHA DE CAJU">
                     </div>
 
                     <div class="itemVitrineDescricao">
-                        <p>CASTANHA DE CAJU A GRANEL 100 G</p>
+                        <h5>CASTANHA DE CAJU A GRANEL 100 G</h5>
                     </div>
 
                     <div class="itemVitrinePreco">
@@ -152,19 +157,19 @@
                     </div>
 
                     <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                        <button type="button" onclick="document.location='paginaDeDetalhes.html'">VER MAIS</button>
                     </div>
 
-                </div>
+                </article>
 
-                <div class="itemVitrine"> <!-- Páprica-->
+                <article class="itemVitrine"> <!-- Páprica-->
 
                     <div class="itemVitrineFoto">
-                        <img src="imagens/paprica.jpg" alt="PÁPRICA">
+                        <img src="../images/paprica.jpg" alt="PÁPRICA">
                     </div>
 
                     <div class="itemVitrineDescricao">
-                        <p>PÁPRICA DEFUMADA<br/>200 G</p>
+                        <h5>PÁPRICA DEFUMADA 200 G</h5>
                     </div>
 
                     <div class="itemVitrinePreco">
@@ -172,19 +177,19 @@
                     </div>
 
                     <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                        <button type="button" onclick="document.location='paginaDeDetalhes.html'">VER MAIS</button>
                     </div>
 
-                </div>
+                </article>
 
-                <div class="itemVitrine"> <!-- Hortelã-->
+                <article class="itemVitrine"> <!-- Hortelã-->
 
                     <div class="itemVitrineFoto">
-                        <img src="imagens/hortela.jpg" alt="HORTELÃ">
+                        <img src="../images/hortela.jpg" alt="HORTELÃ">
                     </div>
 
                     <div class="itemVitrineDescricao">
-                        <p>HORTELÃ DESIDRATADA<br/>100 G</p>
+                        <h5>HORTELÃ DESIDRATADA 100 G</h5>
                     </div>
 
                     <div class="itemVitrinePreco">
@@ -192,19 +197,19 @@
                     </div>
 
                     <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                        <button type="button" onclick="document.location='paginaDeDetalhes.html'">VER MAIS</button>
                     </div>
 
-                </div>
+                </article>
 
-                <div class="itemVitrine"> <!-- Cominho-->
+                <article class="itemVitrine"> <!-- Cominho-->
 
                     <div class="itemVitrineFoto">
-                        <img src="imagens/cominho.jpg" alt="COMINHO">
+                        <img src="../images/cominho.jpg" alt="COMINHO">
                     </div>
 
                     <div class="itemVitrineDescricao">
-                        <p>COMINHO EM PÓ 60G</p>
+                        <h5>COMINHO EM PÓ 60G</h5>
                     </div>
 
                     <div class="itemVitrinePreco">
@@ -212,14 +217,13 @@
                     </div>
 
                     <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                        <button type="button" onclick="document.location='paginaDeDetalhes.html'">VER MAIS</button>
                     </div>
 
-                </div>
+                </article>
 
             </div>
-
-        </main>
+        </section> <!-- Parei Aqui -->
         
         <footer>
 
