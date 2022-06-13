@@ -25,8 +25,8 @@ body{
 
     .logo{
         width: 216px;
-        height: 52.2px;
-        text-align: center;
+        height: 89px;
+        text-align: left;
         border: none;
         /*margin-top: 18px;*/
         margin-left: 46px; 
@@ -113,7 +113,7 @@ body{
 
         .itemMenu a:link, a:visited{
             text-decoration: none;
-            color: #0000FF;
+            color: #000000;
         }
 
         .itemMenu a:hover{
@@ -172,7 +172,7 @@ body{
     border-bottom: solid 3px  #000000;
 }
 
-.divisorProdutos h2{
+.divisorProdutos h1{
     font-size: 18px;
     font-weight: normal;
     margin-left: 15px;
@@ -219,7 +219,14 @@ body{
             border: none;
         }
 
-            .itemVitrineDescricao p {
+            .itemVitrineDescricao h2 {
+                font-size: 14px;
+                font-weight: normal;
+                margin: 0px;
+                text-align: center;
+            }
+
+            .itemVitrineDescricao h5 {
                 font-size: 14px;
                 font-weight: normal;
                 margin: 0px;
@@ -252,13 +259,20 @@ body{
                 width: 218px;
                 height: 40px;
                 line-height: 40px; 
-                background-color: #2D952D;
-                border: none;
+                background-color: #FFFFFF;
+                border: 2px solid #2D952D;
+                color: #000000;
                 text-align: center;
                 text-decoration: none;
                 font-size: 14px;
+                transition-duration: 0.4s;
                 cursor: pointer;
-            } 
+            }
+
+                .itemVitrineBotao button:hover{
+                    background-color: #2D952D;
+                    color: #FFFFFF;
+                }
 
 /* Divisor newsletter */
 
@@ -274,7 +288,7 @@ body{
     border-top: 3px solid #000000;
     }
     
-    .divisorNewsletter h2{
+    .divisorNewsletter h3{
         font-size: 18px;
         font-weight: normal;
         margin-left: 15px;
@@ -339,25 +353,90 @@ body{
 
 /* Rodapé */
 
-.Rodape{
+.rodape{
     display: flex;
-    justify-content: left;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     width:1330px;
-    height:51px;
+    /*height:51px;*/
     margin-top: 43px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 128px;
+    /*margin-bottom: 128px;*/
     border-top: 3px solid #000000;
     }
     
-    .Rodape h3{
-        font-size: 18px;
-        font-weight: normal;
-        margin-left: 15px;
-        text-align: left;
+    .rodapeLogo {
+        margin-top: 10px;
+        margin-left: 46px;
     }
+    
+        .rodapeLogo img{
+            width: 160px;
+            height: 81px;
+        }
+
+    .rodapeContato {
+        font-style: normal;
+    }
+
+        .rodapeContato h4 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .rodapeContato h6 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+            margin: none;
+        }
+
+        .rodapeContato img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .rodapeContato p {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .rodapeContatoItem {
+            display: flex;
+            flex-direction: row;
+        }
+
+    .rodapePagamento {
+        margin-right: 46px;
+    }
+    
+        .rodapePagamento h4 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .rodapePagamento h6 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+            margin: none;
+        }
+
+        .rodapePagamento img {
+            width: 330px;
+            height: 60px;
+        } 
 
 /* Página de detalhes */
 
@@ -418,7 +497,7 @@ body{
             border: none;
         }
 
-            .detalheProdutoTitulo h2{
+            .detalheProdutoTitulo h1{
                 font-size: 24px;
                 font-weight: normal;
                 text-align: left;
@@ -453,7 +532,7 @@ body{
                 border: none;
             }
 
-                .detalheProdutoCaixaPrecoValor h4 {
+                .detalheProdutoCaixaPrecoValorT1 {
                     font-size: 36px;
                     font-weight: normal;
                     text-align: left;
@@ -462,7 +541,7 @@ body{
                     color: #C4C4C4;
                 }
 
-                .detalheProdutoCaixaPrecoValor h3{
+                .detalheProdutoCaixaPrecoValorT2 {
                     font-size: 36px;
                     font-weight: normal;
                     text-align: left;
@@ -473,38 +552,53 @@ body{
                     padding: 0px;
                 }
 
-            .detalheProdutoCaixaPrecoBotao{
-                width: 568px;
-                height: 60px;
+            .detalheProdutoCaixaPrecoSubmit {
                 display:flex;
                 flex-direction: row;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                margin: 34px 0px 0px 0px;
-                border: none;
+                align-items: flex-end;
+                justify-content: flex-start;
             }
 
-                .detalheProdutoCaixaPrecoBotao a {
-                    text-decoration: none;
-                } 
-
-                .detalheProdutoCaixaPrecoBotao button {
-                    width: 444px;
+                .detalheProdutoCaixaPrecoQuantidade input {
+                    width: 80px;
                     height: 58px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 28.8px;  
+                }
+
+                .detalheProdutoCaixaPrecoBotao{
+                    width: 568px;
+                    height: 60px;
                     display:flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     align-items: center;
-                    justify-content: center;
-                    background-color: #2D952D;
+                    justify-content: flex-start;
+                    margin: 34px 0px 0px 30px;
                     border: none;
-                    text-align: center;
-                    text-decoration: none;
-                    font-size: 36px;
-                    color: #FFFFFF;
-                    cursor: pointer;
                 }
+
+                    .detalheProdutoCaixaPrecoBotao a {
+                        text-decoration: none;
+                    } 
+
+                    .detalheProdutoCaixaPrecoBotao button {
+                        width: 444px;
+                        height: 58px;
+                        display:flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #2D952D;
+                        border: none;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 32px;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                    }
 
         .containerFormularioCep{
             width: 568px;
@@ -538,12 +632,25 @@ body{
             }
 
             .InputCEP{
+                display:flex;
+                flex-direction: row;
+                margin: 0px;
+                padding: 0px;
+                /*float: left;*/
+                background-color: transparent;
+                border: 1px solid #C4C4C4;
+                width: 238.5px;
+                height: 48.5px;
+                font-size: 14px;
+            }
+
+            .InputCEP input {
                 margin: 0px;
                 padding: 0px;
                 float: left;
                 background-color: transparent;
-                border: 1px solid #C4C4C4;
-                width: 238.5px;
+                border: none;
+                width: 200px;
                 height: 48.5px;
                 font-size: 14px;
             }
@@ -603,7 +710,7 @@ body{
     border-bottom: solid 3px  #000000;
 }
 
-.divisorProdutosRelacionados h2{
+.divisorProdutosRelacionados h4{
     font-size: 18px;
     font-weight: normal;
     margin-left: 15px;

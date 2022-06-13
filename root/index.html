@@ -1,160 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
-        <meta charset="utf-8" /> 
+        <title>O Herborista - Sua loja de produtos naturais</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="O Herborista, produtos naturais, alimentos saudáveis, orgânicos, castanhas, chás, ervas, especiarias, temperos, farinhas, frutas secas, sementes, grãos">
+        <meta name="description" content="O Herborista tem tudo o que você precisa para uma alimentação saudável e equilibrada, além de temperos e especiarias exóticos para dar um sabor novo aos seus pratos. Venha conferir nossos chás e ervas também!">
+        <meta name="author" content="Mateus DF">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Página Principal - Atividade 2 UC02</title>
-        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
 
         <header>
             <div class="containerCabecalho">
 
-                <div class="logo"><a href="index.html"><h1>TÍTULO</h1></a></div> <!-- Tentei mudar a cor do link para preto, mas ele não aceitou vide estilo.css-->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="LOGOMARCA" style="width:157px;height:80px;">
+                    </a>
+                </div> 
 
                 <div class="barraDeBusca">
-                    <input type="text" class="campoDeBusca" placeholder="BUSCAR PRODUTOS"/>
-                    <button type="submit" value="Submit" class="botaoBuscar"><img class="lupa" src="imagens/icone_lupa.png" alt="BUSCAR"/></button>
+                    <form action="formHandler.php" method="get">
+                        <input class="campoDeBusca" type="search" name="q" placeholder="BUSCAR PRODUTOS"/>
+                        <button class="botaoBuscar" type="submit">
+                            <img class="lupa" src="images/iconeLupa.png" alt="BUSCAR"/>
+                        </button>
+                    </form> 
                 </div>
 
             </div>
 
-            <nav>
-                <div class="containerMenu">
-                
-                    <div class="itemMenu"><a href="#">CASTANHAS</a></div>
-                    <div class="itemMenu"><a href="#">CHÁS</a></div>
-                    <div class="itemMenu"><a href="#">ESPECIARIAS</a></div>
-                    <div class="itemMenu"><a href="#">FARINHAS</a></div>
-                    <div class="itemMenu"><a href="#">FRUTAS SECAS</a></div>
-
-                </div>
+            <nav class="containerMenu">
+                <div class="itemMenu"><a href="#">CASTANHAS</a></div>
+                <div class="itemMenu"><a href="#">CHÁS</a></div>
+                <div class="itemMenu"><a href="#">ESPECIARIAS</a></div>
+                <div class="itemMenu"><a href="#">FARINHAS</a></div>
+                <div class="itemMenu"><a href="#">FRUTAS SECAS</a></div>
             </nav>
         </header>
 
         <main>
 
             <!-- Carrossel-->
-
             <section class="containerCarrossel">
                 <div class="itemCarrossel">
-                    <img src="imagens/oferta1_carrossel.jpg" alt="OFERTA 1">
-                    <img src="imagens/oferta2_carrossel.jpg" alt="OFERTA 2">
-                    <img src="imagens/oferta3_carrossel.jpg" alt="OFERTA 3">
-                    <img src="imagens/oferta1_carrossel.jpg" alt="OFERTA 1">
+                    <img src="images/oferta1Carrossel.jpg" alt="OFERTA 1">
+                    <img src="images/oferta2Carrossel.jpg" alt="OFERTA 2">
+                    <img src="images/oferta3Carrossel.jpg" alt="OFERTA 3">
+                    <img src="images/oferta1Carrossel.jpg" alt="OFERTA 1">
                 </div>
             </section>
 
-            <!-- Linha divisória de produtos-->
-            <div class="divisorProdutos">
-                <h2>PRODUTOS</h2>
-            </div>
-
-            <!-- Vitrine -->
-            <div class="containerVitrine">
-
-                <div class="itemVitrine"> <!-- Cúrcuma-->
-
-                    <div class="itemVitrineFoto">
-                        <img src="imagens/curcuma.jpg" alt="CÚRCUMA">
-                    </div>
-
-                    <div class="itemVitrineDescricao">
-                        <p>CÚRCUMA EM PÓ 50G</p>
-                    </div>
-
-                    <div class="itemVitrinePreco">
-                        <p>R$ 7,OO</p>
-                    </div>
-
-                    <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
-                    </div>
-
+            <section>
+                <!-- Linha divisória de produtos-->
+                <div class="divisorProdutos">
+                    <h1>PRODUTOS</h1>
                 </div>
 
-                <div class="itemVitrine"> <!-- Caju-->
+                <!-- Vitrine -->
+                <div class="containerVitrine">
 
-                    <div class="itemVitrineFoto">
-                        <img src="imagens/caju.jpg" alt="CASTANHA DE CAJU">
-                    </div>
+                    <article class="itemVitrine"> <!-- Cúrcuma-->
 
-                    <div class="itemVitrineDescricao">
-                        <p>CASTANHA DE CAJU A GRANEL 100 G</p>
-                    </div>
+                        <div class="itemVitrineFoto">
+                            <img src="images/curcuma.jpg" alt="CÚRCUMA">
+                        </div>
 
-                    <div class="itemVitrinePreco">
-                        <p>R$ 5,00</p>
-                    </div>
+                        <div class="itemVitrineDescricao">
+                            <h2>CÚRCUMA EM PÓ 50G</h2>
+                        </div>
 
-                    <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
-                    </div>
+                        <div class="itemVitrinePreco">
+                            <p>R$ 7,OO</p>
+                        </div>
+
+                        <div class="itemVitrineBotao">
+                            <button type="button" onclick="document.location='pages/paginaDeDetalhes.html'">VER MAIS</button>
+                        </div>
+
+                    </article>
+
+                    <article class="itemVitrine"> <!-- Caju-->
+
+                        <div class="itemVitrineFoto">
+                            <img src="images/caju.jpg" alt="CASTANHA DE CAJU">
+                        </div>
+
+                        <div class="itemVitrineDescricao">
+                            <h2>CASTANHA DE CAJU A GRANEL 100 G</h2>
+                        </div>
+
+                        <div class="itemVitrinePreco">
+                            <p>R$ 5,00</p>
+                        </div>
+
+                        <div class="itemVitrineBotao">
+                            <button type="button" onclick="document.location='pages/paginaDeDetalhes.html'">VER MAIS</button>
+                        </div>
+
+                    </article>
+
+                    <article class="itemVitrine"> <!-- Páprica-->
+
+                        <div class="itemVitrineFoto">
+                            <img src="images/paprica.jpg" alt="PÁPRICA">
+                        </div>
+
+                        <div class="itemVitrineDescricao">
+                            <h2>PÁPRICA DEFUMADA 200 G</h2>
+                        </div>
+
+                        <div class="itemVitrinePreco">
+                            <p>R$ 3,90</p>
+                        </div>
+
+                        <div class="itemVitrineBotao">
+                            <button type="button" onclick="document.location='pages/paginaDeDetalhes.html'">VER MAIS</button>
+                        </div>
+
+                    </article>
+
+                    <article class="itemVitrine"> <!-- Hortelã-->
+
+                        <div class="itemVitrineFoto">
+                            <img src="images/hortela.jpg" alt="HORTELÃ">
+                        </div>
+
+                        <div class="itemVitrineDescricao">
+                            <h2>HORTELÃ DESIDRATADA 100 G</h2>
+                        </div>
+
+                        <div class="itemVitrinePreco">
+                            <p>R$ 4,40</p>
+                        </div>
+
+                        <div class="itemVitrineBotao">
+                            <button type="button" onclick="document.location='pages/paginaDeDetalhes.html'">VER MAIS</button>
+                        </div>
+
+                    </article>
 
                 </div>
+            </section>
 
-                <div class="itemVitrine"> <!-- Páprica-->
+            <section>
 
-                    <div class="itemVitrineFoto">
-                        <img src="imagens/paprica.jpg" alt="PÁPRICA">
-                    </div>
-
-                    <div class="itemVitrineDescricao">
-                        <p>PÁPRICA DEFUMADA<br/>200 G</p>
-                    </div>
-
-                    <div class="itemVitrinePreco">
-                        <p>R$ 3,90</p>
-                    </div>
-
-                    <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
-                    </div>
-
+                <!-- Divisor newsletter -->
+                <div class="divisorNewsletter">
+                    <h3>QUER RECEBER NOSSAS OFERTAS POR E-MAIL? É SÓ SE CADASTRAR!</h3>
                 </div>
 
-                <div class="itemVitrine"> <!-- Hortelã-->
+                <!-- Formulário -->
+                <div class="containerFormulario">
 
-                    <div class="itemVitrineFoto">
-                        <img src="imagens/hortela.jpg" alt="HORTELÃ">
-                    </div>
-
-                    <div class="itemVitrineDescricao">
-                        <p>HORTELÃ DESIDRATADA<br/>100 G</p>
-                    </div>
-
-                    <div class="itemVitrinePreco">
-                        <p>R$ 4,40</p>
-                    </div>
-
-                    <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Divisor newsletter -->
-
-            <div class="divisorNewsletter">
-                <h2>QUER RECEBER NOSSAS OFERTAS POR E-MAIL? É SÓ SE CADASTRAR!</h2>
-            </div>
-
-            <!-- Formulário -->
-
-            <div class="containerFormulario">
-
-                <form method="POST">
-                        
+                    <form action="formHandler2.php" method="post">
+                            
                         <div class="itemFormulario">
                             <div class="itemFormularioLabel">
                                 <label for="nome">NOME:</label>
                             </div>
                             <div>
-                                <input type="text" class="itemFormularioInput" id="nome" name="nome" placeholder="Campo obrigatório" required />
+                                <input class="itemFormularioInput" type="text" id="nome" name="nome" placeholder="Campo obrigatório" required />
                             </div>
                         </div>
 
@@ -163,7 +175,7 @@
                                 <label for="email">E-MAIL:</label>
                             </div>
                             <div>
-                                <input type="email" class="itemFormularioInput" id="email" name="email" placeholder="Campo obrigatório" required />
+                                <input class="itemFormularioInput" type="email" id="email" name="email" placeholder="Campo obrigatório" required />
                             </div>
                         </div>
 
@@ -172,24 +184,49 @@
                                 <label for="telefone">TELEFONE:</label>
                             </div>
                             <div>
-                                <input type="tel" class="itemFormularioInput" id="telefone" name="telefone" />
+                                <input class="itemFormularioInput" type="tel" id="telefone" name="telefone" />
                             </div>
                             <div>
                                 <input class="formularioBotao" type="submit" value="CADASTRAR" />
                             </div>
                         </div>
-                    
-                </form>
-            </div>
+                        
+                    </form>
+                </div>
+            </section>
 
         </main>
         
-        <footer>
+        <!-- Rodapé -->
+        <footer class="rodape">
 
-            <!-- Rodapé -->
+            <div class="rodapeLogo">
+                <img src="images/logo.png" alt="LOGOMARCA">
+            </div>
 
-            <div class="Rodape">
-                <h3>&copy; 2021 - TÍTULO</h3>
+            <address class="rodapeContato">
+                <h4>CONTATO</h4>
+
+                <div class="rodapeContatoItem">
+                    <img src="images/iconeEndereco.png" alt="ENDEREÇO">
+                    <p>Rua Lorem Ipsum, 000 Cidade/UF</p>
+                </div>
+
+                <div class="rodapeContatoItem">
+                    <img src="images/iconeTelefone.png" alt="TELEFONE">
+                    <p>(XX) 1234-5678</p>
+                </div>
+
+                <div class="rodapeContatoItem">
+                    <img src="images/iconeEmail.png" alt="E-MAIL">
+                    <p>sac@oherborista.com</p>
+                </div>
+
+            </address>
+
+            <div class="rodapePagamento">
+                <h4>PAGAMENTO</h4>
+                <img src="images/pagamento.png" alt="MÉTODOS DE PAGAMENTO">
             </div>
 
         </footer>

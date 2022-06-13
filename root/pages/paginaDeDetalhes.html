@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
-        <meta charset="utf-8" /> 
+        <title>Cúrcuma em pó 50G</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="cúrcuma, cúrcuma em pó">
+        <meta name="description" content="Compre Cúrcuma em pó no Herborista e receba no conforto da sua casa.">
+        <meta name="author" content="Mateus DF">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Página de Detalhes - Atividade 2 UC02</title>
-        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="../css/estilo.css"> 
     </head>
     <body>
 
         <header>
             <div class="containerCabecalho">
 
-                <div class="logo"><a href="index.html"><h1>TÍTULO</h1></a></div> <!-- Tentei mudar a cor do link para preto, mas ele não aceitou vide estilo.css-->
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="LOGOMARCA" style="width:157px;height:80px;">
+                    </a>
+                </div>
 
                 <div class="barraDeBusca">
-                    <input type="text" class="campoDeBusca" placeholder="BUSCAR PRODUTOS"/>
-                    <button type="submit" value="Submit" class="botaoBuscar"><img class="lupa" src="imagens/icone_lupa.png" alt="BUSCAR"/></button>
+                    <form action="../formHandler.php" method="get">
+                        <input class="campoDeBusca" type="search" name="q" placeholder="BUSCAR PRODUTOS"/>
+                        <button class="botaoBuscar" type="submit">
+                            <img class="lupa" src="../images/iconeLupa.png" alt="BUSCAR"/>
+                        </button>
+                    </form>
                 </div>
 
             </div>
 
-            <nav>
-                <div class="containerMenu">
-                
-                    <div class="itemMenu"><a href="#">CASTANHAS</a></div>
-                    <div class="itemMenu"><a href="#">CHÁS</a></div>
-                    <div class="itemMenu"><a href="#">ESPECIARIAS</a></div>
-                    <div class="itemMenu"><a href="#">FARINHAS</a></div>
-                    <div class="itemMenu"><a href="#">FRUTAS SECAS</a></div>
-
-                </div>
+            <nav class="containerMenu">
+                <div class="itemMenu"><a href="#">CASTANHAS</a></div>
+                <div class="itemMenu"><a href="#">CHÁS</a></div>
+                <div class="itemMenu"><a href="#">ESPECIARIAS</a></div>
+                <div class="itemMenu"><a href="#">FARINHAS</a></div>
+                <div class="itemMenu"><a href="#">FRUTAS SECAS</a></div>
             </nav>
         </header>
 
@@ -38,90 +49,107 @@
 
             <!-- Detalhe do produto -->
 
-            <div class="containerDetalheProduto">
+            <section class="containerDetalheProduto">
 
                 <div class="detalheProdutoFoto">
-                    <img src="imagens/curcuma.jpg" alt="CÚRCUMA">
+                    <img src="../images/curcuma.jpg" alt="CÚRCUMA">
                 </div>
 
-                <div class="detalheProdutoTexto">
+                <form class="detalheProdutoTexto" action="../formHandlerCompra.php" method="post">
 
                     <div class="detalheProdutoTitulo">
-                        <h2>CÚRCUMA EM PÓ 50G</h2>
+                        <h1>CÚRCUMA EM PÓ 50G</h1>
+                        <input type="hidden" id="nomeProduto" name="nomeProduto" value="Cúrcuma em pó 50G">
                     </div>
 
                     <div class="detalheProdutoCaixaPreco">
 
                         <div class="detalheProdutoCaixaPrecoValor">
-                            <h4>por</h4><h3>R$ 7,00</h3>
+                            <p><span class="detalheProdutoCaixaPrecoValorT1">por</span><span class="detalheProdutoCaixaPrecoValorT2">R$ 7,00</span></p>
+                            <input type="hidden" id="precoProduto" name="precoProduto" value="7.00">
                         </div>
 
-                        <div class="detalheProdutoCaixaPrecoBotao">
-                            <a href="#"><button type="button">COMPRAR</button></a>
+                        <div class="detalheProdutoCaixaPrecoSubmit">
+
+                            <div class="detalheProdutoCaixaPrecoQuantidade">
+                                <input type="number" id="quantidadeProduto" name="quantidadeProduto" min="1" value="1">
+                            </div>
+                        
+                            <div class="detalheProdutoCaixaPrecoBotao">
+                                <button type="submit">COMPRAR</button>
+                            </div>
+
                         </div>
                     </div>
 
                     <div class="containerFormularioCep">
-                        <form method="POST">
-                            <div class="itemFormularioCep">
+                        
+                        <div class="itemFormularioCep">
 
-                                <div class="labelCEP">
-                                    <label for="cep">CALCULE O FRETE</label>
-                                </div>
-                                <div>
-                                    <input type="text" class="InputCEP"  id="cep" name="cep" placeholder="CEP" />
-                                </div>
+                            <div class="labelCEP">
+                                <label for="cep">CALCULE O FRETE</label>
                             </div>
-                            
-                        </form>
+
+                            <div class="InputCEP">
+                                <input type="text" id="cep" name="cep" placeholder="CEP" />
+                                <button class="botaoBuscar" type="submit" formaction="../formHandlerCalculaFrete.php">
+                                    <img class="lupa" src="../images/iconeLupa.png" alt="CALCULAR FRETE"/>
+                                </button>
+                            </div>
+                        </div> 
 
                     </div>
 
+                </form>
+
+            </section>
+
+            <section>
+                <!-- Divisor descrição -->
+                <div class="divisorDescricao">
+                    <h2>DESCRIÇÃO</h2>
                 </div>
 
-            </div>
+                <!-- Descrição do produto -->
 
-            <!-- Divisor descrição -->
-            <div class="divisorDescricao">
-                <h2>DESCRIÇÃO</h2>
-            </div>
+                <div class="containerDescricao">
 
-            <!-- Descrição do produto -->
+                    <h3 class="descricaoTextoTitulo">ESPECIFICAÇÕES</h3>
+                    <p class="descricaoTextoCorpo">A cúrcuma ou açafrão-da-terra é uma planta da família do gengibre, originária da Ásia. Da sua raíz seca e moída se obtém uma especiaria amarelo-dourada de sabor ligeiramente amargo. É usada para temperar e dar cor aos alimentos.</p>
+                    <br/>
 
-            <div class="containerDescricao">
+                    <h3 class="descricaoTextoTitulo">CONTEÚDO: 50 GRAMAS DE CÚRCUMA EM PÓ PURA</h3>
+                    <br/>
 
-                <p class="descricaoTextoTitulo">ESPECIFICAÇÕES</p>
-                <p class="descricaoTextoCorpo">A cúrcuma ou açafrão-da-terra é uma planta da família do gengibre, originária da Ásia. Da sua raíz seca e moída se obtém uma especiaria amarelo-dourada de sabor ligeiramente amargo. É usada para temperar e dar cor aos alimentos.</p>
-                <br/>
+                    <h3 class="descricaoTextoTitulo">INGREDIENTES</h3>
+                    <p class="descricaoTextoCorpo">Cúrcuma.</p>
+                    <br/>
 
-                <p class="descricaoTextoTitulo">CONTEÚDO: 50 GRAMAS DE CÚRCUMA EM PÓ PURA</p>
-                <br/>
+                    <h3 class="descricaoTextoTitulo">RECOMENDAÇÃO DE CONSUMO</h3>
+                    <p class="descricaoTextoCorpo">Pode ser usada para temperar e colorir carne de frango e de peixe,  pratos com ovos, molhos, maioneses, sopas, arroz e pães. É também muito utilizada em pratos da culinária indiana.</p>
 
-                <p class="descricaoTextoTitulo">INGREDIENTES</p>
-                <p class="descricaoTextoCorpo">Cúrcuma.</p>
-                <br/>
+                </div>
+            </section>
+        </main>
 
-                <p class="descricaoTextoTitulo">RECOMENDAÇÃO DE CONSUMO</p>
-                <p class="descricaoTextoCorpo">Pode ser usada para temperar e colorir carne de frango e de peixe,  pratos com ovos, molhos, maioneses, sopas, arroz e pães. É também muito utilizada em pratos da culinária indiana.</p>
-
-            </div>
+        <section>
 
             <!-- Divisor produtos relacionados-->
             <div class="divisorProdutosRelacionados">
-                <h2>PRODUTOS RELACIONADOS</h2>
+                <h4>PRODUTOS RELACIONADOS</h4>
             </div>
 
             <!-- Vitrine -->
             <div class="containerVitrine">
 
-                <div class="itemVitrine"> <!-- Caju-->
+                <article class="itemVitrine"> <!-- Caju-->
 
                     <div class="itemVitrineFoto">
-                        <img src="imagens/caju.jpg" alt="CASTANHA DE CAJU">
+                        <img src="../images/caju.jpg" alt="CASTANHA DE CAJU">
                     </div>
 
                     <div class="itemVitrineDescricao">
-                        <p>CASTANHA DE CAJU A GRANEL 100 G</p>
+                        <h5>CASTANHA DE CAJU A GRANEL 100 G</h5>
                     </div>
 
                     <div class="itemVitrinePreco">
@@ -129,19 +157,19 @@
                     </div>
 
                     <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                        <button type="button" onclick="document.location='paginaDeDetalhes.html'">VER MAIS</button>
                     </div>
 
-                </div>
+                </article>
 
-                <div class="itemVitrine"> <!-- Páprica-->
+                <article class="itemVitrine"> <!-- Páprica-->
 
                     <div class="itemVitrineFoto">
-                        <img src="imagens/paprica.jpg" alt="PÁPRICA">
+                        <img src="../images/paprica.jpg" alt="PÁPRICA">
                     </div>
 
                     <div class="itemVitrineDescricao">
-                        <p>PÁPRICA DEFUMADA<br/>200 G</p>
+                        <h5>PÁPRICA DEFUMADA 200 G</h5>
                     </div>
 
                     <div class="itemVitrinePreco">
@@ -149,19 +177,19 @@
                     </div>
 
                     <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                        <button type="button" onclick="document.location='paginaDeDetalhes.html'">VER MAIS</button>
                     </div>
 
-                </div>
+                </article>
 
-                <div class="itemVitrine"> <!-- Hortelã-->
+                <article class="itemVitrine"> <!-- Hortelã-->
 
                     <div class="itemVitrineFoto">
-                        <img src="imagens/hortela.jpg" alt="HORTELÃ">
+                        <img src="../images/hortela.jpg" alt="HORTELÃ">
                     </div>
 
                     <div class="itemVitrineDescricao">
-                        <p>HORTELÃ DESIDRATADA<br/>100 G</p>
+                        <h5>HORTELÃ DESIDRATADA 100 G</h5>
                     </div>
 
                     <div class="itemVitrinePreco">
@@ -169,19 +197,19 @@
                     </div>
 
                     <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                        <button type="button" onclick="document.location='paginaDeDetalhes.html'">VER MAIS</button>
                     </div>
 
-                </div>
+                </article>
 
-                <div class="itemVitrine"> <!-- Cominho-->
+                <article class="itemVitrine"> <!-- Cominho-->
 
                     <div class="itemVitrineFoto">
-                        <img src="imagens/cominho.jpg" alt="COMINHO">
+                        <img src="../images/cominho.jpg" alt="COMINHO">
                     </div>
 
                     <div class="itemVitrineDescricao">
-                        <p>COMINHO EM PÓ 60G</p>
+                        <h5>COMINHO EM PÓ 60G</h5>
                     </div>
 
                     <div class="itemVitrinePreco">
@@ -189,21 +217,44 @@
                     </div>
 
                     <div class="itemVitrineBotao">
-                        <a href="pagina_de_detalhes.html"><button type="button">VER MAIS</button></a>
+                        <button type="button" onclick="document.location='paginaDeDetalhes.html'">VER MAIS</button>
                     </div>
 
-                </div>
+                </article>
 
             </div>
-
-        </main>
+        </section>
         
-        <footer>
+        <!-- Rodapé -->
+        <footer class="rodape">
 
-            <!-- Rodapé -->
+            <div class="rodapeLogo">
+                <img src="../images/logo.png" alt="LOGOMARCA">
+            </div>
 
-            <div class="Rodape">
-                <h3>&copy; 2021 - TÍTULO</h3>
+            <address class="rodapeContato">
+                <h6>CONTATO</h6>
+
+                <div class="rodapeContatoItem">
+                    <img src="../images/iconeEndereco.png" alt="ENDEREÇO">
+                    <p>Rua Lorem Ipsum, 000 Cidade/UF</p>
+                </div>
+
+                <div class="rodapeContatoItem">
+                    <img src="../images/iconeTelefone.png" alt="TELEFONE">
+                    <p>(XX) 1234-5678</p>
+                </div>
+
+                <div class="rodapeContatoItem">
+                    <img src="../images/iconeEmail.png" alt="E-MAIL">
+                    <p>sac@oherborista.com</p>
+                </div>
+
+            </address>
+
+            <div class="rodapePagamento">
+                <h6>PAGAMENTO</h6>
+                <img src="../images/pagamento.png" alt="MÉTODOS DE PAGAMENTO">
             </div>
 
         </footer>
