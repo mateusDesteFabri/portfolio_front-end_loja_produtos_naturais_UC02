@@ -388,6 +388,14 @@ body{
             text-decoration: none;
         }
 
+        .rodapeContato h6 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+            margin: none;
+        }
+
         .rodapeContato img {
             width: 40px;
             height: 40px;
@@ -415,6 +423,14 @@ body{
             font-weight: normal;
             text-align: left;
             text-decoration: none;
+        }
+
+        .rodapePagamento h6 {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            text-decoration: none;
+            margin: none;
         }
 
         .rodapePagamento img {

@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="barraDeBusca">
-                    <form action="../form-handler.php" method="get">
+                    <form action="../formHandler.php" method="get">
                         <input class="campoDeBusca" type="search" name="q" placeholder="BUSCAR PRODUTOS"/>
                         <button class="botaoBuscar" type="submit">
                             <img class="lupa" src="../images/iconeLupa.png" alt="BUSCAR"/>
@@ -55,7 +55,7 @@
                     <img src="../images/curcuma.jpg" alt="CÚRCUMA">
                 </div>
 
-                <form class="detalheProdutoTexto" action="../form-handler-compra.php" method="post">
+                <form class="detalheProdutoTexto" action="../formHandlerCompra.php" method="post">
 
                     <div class="detalheProdutoTitulo">
                         <h1>CÚRCUMA EM PÓ 50G</h1>
@@ -92,7 +92,7 @@
 
                             <div class="InputCEP">
                                 <input type="text" id="cep" name="cep" placeholder="CEP" />
-                                <button class="botaoBuscar" type="submit" formaction="../form-handler-calculaFrete.php">
+                                <button class="botaoBuscar" type="submit" formaction="../formHandlerCalculaFrete.php">
                                     <img class="lupa" src="../images/iconeLupa.png" alt="CALCULAR FRETE"/>
                                 </button>
                             </div>
@@ -223,14 +223,38 @@
                 </article>
 
             </div>
-        </section> <!-- Parei Aqui -->
+        </section>
         
-        <footer>
+        <!-- Rodapé -->
+        <footer class="rodape">
 
-            <!-- Rodapé -->
+            <div class="rodapeLogo">
+                <img src="../images/logo.png" alt="LOGOMARCA">
+            </div>
 
-            <div class="Rodape">
-                <h3>&copy; 2021 - TÍTULO</h3>
+            <address class="rodapeContato">
+                <h6>CONTATO</h6>
+
+                <div class="rodapeContatoItem">
+                    <img src="../images/iconeEndereco.png" alt="ENDEREÇO">
+                    <p>Rua Lorem Ipsum, 000 Cidade/UF</p>
+                </div>
+
+                <div class="rodapeContatoItem">
+                    <img src="../images/iconeTelefone.png" alt="TELEFONE">
+                    <p>(XX) 1234-5678</p>
+                </div>
+
+                <div class="rodapeContatoItem">
+                    <img src="../images/iconeEmail.png" alt="E-MAIL">
+                    <p>sac@oherborista.com</p>
+                </div>
+
+            </address>
+
+            <div class="rodapePagamento">
+                <h6>PAGAMENTO</h6>
+                <img src="../images/pagamento.png" alt="MÉTODOS DE PAGAMENTO">
             </div>
 
         </footer>
