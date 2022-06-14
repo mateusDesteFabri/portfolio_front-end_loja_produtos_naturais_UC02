@@ -1,43 +1,32 @@
-<h1>&#128679; CÓDIGO EM MANUTENÇÃO &#128679;</h1>
-<p>O código deste projeto está em manutenção. Melhorias estão sendo implementadas.</p>
-
 <h1>Portfólio front-end: loja de produtos naturais</h1>
 
-<p>Esta aplicação consiste no front-end de um website para uma loja de produtos naturais. Foi desenvolvida durante a unidade curricular 02 do 
-  curso Técnico em Informática para Internet do SENAC.</p>
-<p>A aplicação foi construída no decorrer de 3 etapas, sendo elas:</p>
-<ul>
-  <li>Etapa 1: montagem de um layout através de wireframes utilizando Figma</li>
-  <li>Etapa 2: criação das páginas HTML e implementação de estilo com CSS seguindo o layout da etapa 1</li>
-  <li>Etapa 3: inclusão de interações nas páginas usando linguagem JavaScript</li>
-</ul>
+<p>Esta aplicação consiste no front-end de um website para uma loja de produtos naturais. Foram desenvolvidas duas páginas (a principal e uma para detalhes de um produto) seguindo estas etapas:</p>
+<ol>
+  <li>Montagem de um layout através de wireframes utilizando Figma</li>
+  <li>Desenvolvimento das páginas HTML e implementação de estilo com CSS seguindo o layout da etapa 1</li>
+</ol>
 
 <h2>Conteúdo</h2>
 <ul>
+
   <li>
-    Os wireframes elaborados na etapa 1 podem ser encontrados nas duas branches do projeto, basta clicar em 
-    <a href="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/tree/main/wireframes_figma">wireframes_figma</a> e escolher
-    visualizar os wireframes das páginas completas, ou os wireframes de cada um dos elementos que compõem as páginas.
+    Os wireframes elaborados na etapa 1 podem ser encontrados em <a href="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/tree/main/wireframes_figma">wireframes_figma</a>
   </li>
+
   <li>
-    Na branch main pode-se observar os códigos desenvolvidos na etapa 2, bastando clicar em 
-    <a href="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/tree/main/paginas">paginas</a>
+    Os códigos desenvolvidos na etapa 2 podem ser observados clicando em <a href="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/tree/main/root">root</a> da branch main
   </li>
-  <li>
-    Na branch <a href="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/tree/com_javaScript">com_javaScript</a>
-    pode-se observar as modificações no código realizadas na etapa 3, bastando clicar em 
-    <a href="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/tree/com_javaScript/paginas">paginas</a>
-  </li>
+
 </ul>
 
 <h2>Rodando o projeto</h2>
-<p>Para rodar os arquivos .html em um navegador e vê-los sendo executados conforme foram programados, siga os seguintes passos:
+<p>Para rodar os arquivos .html em um navegador, será necessário:
 <ol>
   <li>
-    Escolher uma branch do projeto e fazer o seu download
+    Fazer o download do projeto que está na branch main
   </li>
   <li>
-    Se a pasta baixada estiver compactada, por favor, considerar descompactá-la
+    Descompactar a pasta
   </li>
   <li>
     Acessar os arquivos .html do projeto
@@ -67,6 +56,6 @@
 <p>Feito por Mateus Destefani Fabri</p>
 <p>
   <a href="https://www.linkedin.com/in/mateus-destefani-fabri-44b205232/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="LinkedIn">
   </a>
 </p>
