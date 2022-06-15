@@ -41,8 +41,16 @@
 
 <h2>Capturas de tela</h2>
 
-<img src="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/blob/main/wireframes_figma/wireframes_completo/P%C3%A1gina%20Principal.jpg" alt="Página principal" width="500">
-<img src="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/blob/main/wireframes_figma/wireframes_completo/P%C3%A1gina%20de%20Detalhes.jpg" alt="Página de detalhes" width="500">
+<p>index.html:</p>
+<img src="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/blob/main/screenshots/index1.png" alt="Página principal parte 1" width="500">
+<img src="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/blob/main/screenshots/index2.png" alt="Página principal parte 2" width="500">
+<img src="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/blob/main/screenshots/index3.png" alt="Página principal parte 3" width="500">
+
+<p>paginaDeDetalhes.html:</p>
+<img src="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/blob/main/screenshots/paginaDeDetalhes1.png" alt="Página de detalhes parte 1" width="500">
+<img src="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/blob/main/screenshots/paginaDeDetalhes2.png" alt="Página de detalhes parte 2" width="500">
+<img src="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/blob/main/screenshots/paginaDeDetalhes3.png" alt="Página de detalhes parte 3" width="500">
+<img src="https://github.com/mateusDesteFabri/portfolio_front-end_loja_produtos_naturais_UC02/blob/main/screenshots/paginaDeDetalhes4.png" alt="Página de detalhes parte 4" width="500">
 
 <h2>Tecnologias utilizadas</h2>
 <ul>
